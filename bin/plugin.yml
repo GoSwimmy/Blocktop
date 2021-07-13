@@ -1,0 +1,8 @@
+main: net.mysticnetwork.blocktop.Main
+name: BlocksTop
+version: 1.0
+author: Sage
+depends: [WorldGuard, PlaceholderAPI]
+commands:
+  mysticblocktop:
+    aliases: [mbt]

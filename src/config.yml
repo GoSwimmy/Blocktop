@@ -1,0 +1,35 @@
+mysql:
+  host: localhost
+  port: 3306
+  ssl: false
+  autoreconnect: true
+  username: username
+  password: password
+  database: database
+
+options:
+  refresh:
+    #in seconds
+    interval: 10
+    #set whether you want it to post to console when database refreshes are made
+    notif: true
+    #set the notification message
+    notif-message: "&a%total% users refreshed in the database!"
+  blocktop:
+    top-format: "&c%number%. %player% >> %blocks%"
+  command:
+    permission: "MysticBlockTop.admin"
+    no-permission: "&cYou do not have permission to use this command!"
+    help-message-1: "__Admin Commands:__"
+    help-message-2: "/mysticblocktop OR /mbt - This will show you all the commands"
+    help-message-3: "/mysticblocktop reload OR /mbt reload - This will reload the config"
+    help-message-4: "/mysticblocktop reset OR /mbt reset - This will reset the database"
+    help-message-5: "/mysticblocktop admin remove <player> or /mbt admin remove <player> - This will remove a player from the blockstop"
+    help-message-6: "/mysticblocktop refresh or /mbt refresh - This will refresh the blockstop"
+    invalid-usage: "&cInvalid usage, look at /mbt for help!"
+    invalid-player: "&c%player% is not available!"
+    player-removed: "&a%player% has been removed from the database!"
+    amount-added: "&a%amount% has been added to %player%!"
+    database-refresh: "&aA database refresh request has been sent!"
+    database-reset: "&aThe database has been reset!"
+    config-reloaded: "&aThe config has been reloaded!"
